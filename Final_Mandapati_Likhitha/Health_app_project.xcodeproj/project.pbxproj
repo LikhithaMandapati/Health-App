@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138A5E7F2909A435009B8235 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A5E7E2909A435009B8235 /* HealthData.swift */; };
+		138A5E842909A821009B8235 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A5E802909A820009B8235 /* Sleep.swift */; };
+		138A5E852909A821009B8235 /* Calories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A5E812909A820009B8235 /* Calories.swift */; };
+		138A5E862909A821009B8235 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A5E822909A821009B8235 /* Steps.swift */; };
+		138A5E872909A821009B8235 /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A5E832909A821009B8235 /* HeartRate.swift */; };
+		3F44E1A2290A6A1200D85505 /* PersonalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44E1A1290A6A1100D85505 /* PersonalDetails.swift */; };
+		3F44E1A4290A6A4000D85505 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44E1A3290A6A4000D85505 /* Notifications.swift */; };
+		3F44E1A6290A6A5500D85505 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44E1A5290A6A5500D85505 /* About.swift */; };
+		3F44E1A8290A6AA400D85505 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44E1A7290A6AA400D85505 /* Privacy.swift */; };
+		3F546B3129637A9A00406358 /* Watch_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F546B3029637A9A00406358 /* Watch_appApp.swift */; };
+		3F546B3329637A9A00406358 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F546B3229637A9A00406358 /* ContentView.swift */; };
+		3F546B3529637A9E00406358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F546B3429637A9E00406358 /* Assets.xcassets */; };
+		3F546B3829637A9E00406358 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F546B3729637A9E00406358 /* Preview Assets.xcassets */; };
+		3F546B3C296383CC00406358 /* Health_app_project.app in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDA98529072A5100231B82 /* Health_app_project.app */; };
+		3F546B42296383F100406358 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F546B41296383F100406358 /* HealthKit.framework */; };
+		3F657D36290CB4C60047C88C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F657D35290CB4C50047C88C /* LoginViewController.swift */; };
+		3FB78A79290D01E900F4D058 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB78A78290D01E900F4D058 /* TabBarViewController.swift */; };
+		3FB78A7B290D1EFA00F4D058 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB78A7A290D1EFA00F4D058 /* AppInfoViewController.swift */; };
+		3FFDA98929072A5100231B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA98829072A5100231B82 /* AppDelegate.swift */; };
+		3FFDA98B29072A5100231B82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA98A29072A5100231B82 /* SceneDelegate.swift */; };
+		3FFDA99029072A5100231B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDA98E29072A5100231B82 /* Main.storyboard */; };
+		3FFDA99229072A5600231B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDA99129072A5600231B82 /* Assets.xcassets */; };
+		3FFDA99529072A5600231B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFDA99329072A5600231B82 /* LaunchScreen.storyboard */; };
+		3FFDA99F29075EA200231B82 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA99E29075EA200231B82 /* HistoryViewController.swift */; };
+		3FFDA9A129075EC800231B82 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9A029075EC800231B82 /* ShareViewController.swift */; };
+		3FFDA9A329080DFB00231B82 /* TodayStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9A229080DFB00231B82 /* TodayStepsViewController.swift */; };
+		3FFDA9A5290876E700231B82 /* HistoryStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9A4290876E700231B82 /* HistoryStepsViewController.swift */; };
+		3FFDA9A72908B06200231B82 /* TodayCaloriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9A62908B06100231B82 /* TodayCaloriesViewController.swift */; };
+		3FFDA9A92908B09E00231B82 /* TodaySleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9A82908B09E00231B82 /* TodaySleepViewController.swift */; };
+		3FFDA9AB2908B0D600231B82 /* TodayHeartrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9AA2908B0D600231B82 /* TodayHeartrateViewController.swift */; };
+		3FFDA9AD2908B10C00231B82 /* HistorySleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9AC2908B10C00231B82 /* HistorySleepViewController.swift */; };
+		3FFDA9AF2908B18F00231B82 /* ProfileTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9AE2908B18F00231B82 /* ProfileTableTableViewController.swift */; };
+		3FFDA9B12908B23800231B82 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9B02908B23800231B82 /* DetailsViewController.swift */; };
+		3FFDA9B32908B28900231B82 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9B22908B28900231B82 /* PrivacyViewController.swift */; };
+		3FFDA9B52908B2B800231B82 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9B42908B2B800231B82 /* NotificationsViewController.swift */; };
+		3FFDA9B72908B2E900231B82 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9B62908B2E900231B82 /* AboutViewController.swift */; };
+		3FFDA9BB2908B86A00231B82 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFDA9BA2908B86900231B82 /* TodayViewController.swift */; };
+		4E1358482931756D00B809DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E1358472931756C00B809DF /* GoogleService-Info.plist */; };
+		4E13584B2931769900B809DF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4E13584A2931769900B809DF /* FirebaseAuth */; };
+		4E13584D2931769900B809DF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4E13584C2931769900B809DF /* FirebaseDatabase */; };
+		4E13584F2931769900B809DF /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4E13584E2931769900B809DF /* FirebaseDatabaseSwift */; };
+		4E1358512931DBA400B809DF /* Vitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1358502931DBA400B809DF /* Vitals.swift */; };
+		4E1358582933F9D300B809DF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1358572933F9D200B809DF /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F546B3D296383CC00406358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FFDA97D29072A5100231B82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FFDA98429072A5100231B82;
+			remoteInfo = Health_app_project;
+		};
+		3F546B3F296383E300406358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FFDA97D29072A5100231B82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FFDA98429072A5100231B82;
+			remoteInfo = Health_app_project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138A5E7E2909A435009B8235 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
+		138A5E802909A820009B8235 /* Sleep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		138A5E812909A820009B8235 /* Calories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calories.swift; sourceTree = "<group>"; };
+		138A5E822909A821009B8235 /* Steps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		138A5E832909A821009B8235 /* HeartRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		3F44E1A1290A6A1100D85505 /* PersonalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails.swift; sourceTree = "<group>"; };
+		3F44E1A3290A6A4000D85505 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		3F44E1A5290A6A5500D85505 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		3F44E1A7290A6AA400D85505 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		3F546B2E29637A9A00406358 /* Watch_app Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch_app Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F546B3029637A9A00406358 /* Watch_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch_appApp.swift; sourceTree = "<group>"; };
+		3F546B3229637A9A00406358 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F546B3429637A9E00406358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F546B3729637A9E00406358 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F546B41296383F100406358 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F657D35290CB4C50047C88C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FB78A78290D01E900F4D058 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3FB78A7A290D1EFA00F4D058 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		3FFDA98529072A5100231B82 /* Health_app_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health_app_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFDA98829072A5100231B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FFDA98A29072A5100231B82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FFDA98F29072A5100231B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FFDA99129072A5600231B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FFDA99429072A5600231B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FFDA99629072A5600231B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FFDA99E29075EA200231B82 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3FFDA9A029075EC800231B82 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		3FFDA9A229080DFB00231B82 /* TodayStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayStepsViewController.swift; sourceTree = "<group>"; };
+		3FFDA9A4290876E700231B82 /* HistoryStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStepsViewController.swift; sourceTree = "<group>"; };
+		3FFDA9A62908B06100231B82 /* TodayCaloriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCaloriesViewController.swift; sourceTree = "<group>"; };
+		3FFDA9A82908B09E00231B82 /* TodaySleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySleepViewController.swift; sourceTree = "<group>"; };
+		3FFDA9AA2908B0D600231B82 /* TodayHeartrateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeartrateViewController.swift; sourceTree = "<group>"; };
+		3FFDA9AC2908B10C00231B82 /* HistorySleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySleepViewController.swift; sourceTree = "<group>"; };
+		3FFDA9AE2908B18F00231B82 /* ProfileTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableTableViewController.swift; sourceTree = "<group>"; };
+		3FFDA9B02908B23800231B82 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3FFDA9B22908B28900231B82 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		3FFDA9B42908B2B800231B82 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		3FFDA9B62908B2E900231B82 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3FFDA9BA2908B86900231B82 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4E1358472931756C00B809DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E1358502931DBA400B809DF /* Vitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitals.swift; sourceTree = "<group>"; };
+		4E1358552933F9A400B809DF /* Health_app_project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Health_app_project.entitlements; sourceTree = "<group>"; };
+		4E1358572933F9D200B809DF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F546B2B29637A9A00406358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F546B42296383F100406358 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFDA98229072A5100231B82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E13584F2931769900B809DF /* FirebaseDatabaseSwift in Frameworks */,
+				4E1358582933F9D300B809DF /* HealthKit.framework in Frameworks */,
+				4E13584D2931769900B809DF /* FirebaseDatabase in Frameworks */,
+				4E13584B2931769900B809DF /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		138A5E772909A315009B8235 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FB78A78290D01E900F4D058 /* TabBarViewController.swift */,
+				3FB78A7A290D1EFA00F4D058 /* AppInfoViewController.swift */,
+				3F657D35290CB4C50047C88C /* LoginViewController.swift */,
+				138A5E7D2909A3A8009B8235 /* Profile */,
+				138A5E7C2909A387009B8235 /* Share */,
+				138A5E7B2909A381009B8235 /* Today */,
+				138A5E7A2909A373009B8235 /* History */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		138A5E782909A320009B8235 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA98E29072A5100231B82 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		138A5E792909A328009B8235 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				138A5E812909A820009B8235 /* Calories.swift */,
+				138A5E832909A821009B8235 /* HeartRate.swift */,
+				138A5E802909A820009B8235 /* Sleep.swift */,
+				138A5E822909A821009B8235 /* Steps.swift */,
+				3F44E1A1290A6A1100D85505 /* PersonalDetails.swift */,
+				3F44E1A7290A6AA400D85505 /* Privacy.swift */,
+				3F44E1A3290A6A4000D85505 /* Notifications.swift */,
+				3F44E1A5290A6A5500D85505 /* About.swift */,
+				138A5E7E2909A435009B8235 /* HealthData.swift */,
+				4E1358502931DBA400B809DF /* Vitals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		138A5E7A2909A373009B8235 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA99E29075EA200231B82 /* HistoryViewController.swift */,
+				3FFDA9A4290876E700231B82 /* HistoryStepsViewController.swift */,
+				3FFDA9AC2908B10C00231B82 /* HistorySleepViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		138A5E7B2909A381009B8235 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA9BA2908B86900231B82 /* TodayViewController.swift */,
+				3FFDA9A229080DFB00231B82 /* TodayStepsViewController.swift */,
+				3FFDA9A82908B09E00231B82 /* TodaySleepViewController.swift */,
+				3FFDA9A62908B06100231B82 /* TodayCaloriesViewController.swift */,
+				3FFDA9AA2908B0D600231B82 /* TodayHeartrateViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		138A5E7C2909A387009B8235 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA9A029075EC800231B82 /* ShareViewController.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		138A5E7D2909A3A8009B8235 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA9AE2908B18F00231B82 /* ProfileTableTableViewController.swift */,
+				3FFDA9B02908B23800231B82 /* DetailsViewController.swift */,
+				3FFDA9B22908B28900231B82 /* PrivacyViewController.swift */,
+				3FFDA9B42908B2B800231B82 /* NotificationsViewController.swift */,
+				3FFDA9B62908B2E900231B82 /* AboutViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3F546B2F29637A9A00406358 /* Watch_app Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				3F546B3029637A9A00406358 /* Watch_appApp.swift */,
+				3F546B3229637A9A00406358 /* ContentView.swift */,
+				3F546B3429637A9E00406358 /* Assets.xcassets */,
+				3F546B3629637A9E00406358 /* Preview Content */,
+			);
+			path = "Watch_app Watch App";
+			sourceTree = "<group>";
+		};
+		3F546B3629637A9E00406358 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F546B3729637A9E00406358 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FFDA97C29072A5100231B82 = {
+			isa = PBXGroup;
+			children = (
+				3FFDA98729072A5100231B82 /* Health_app_project */,
+				3F546B2F29637A9A00406358 /* Watch_app Watch App */,
+				3FFDA98629072A5100231B82 /* Products */,
+				4E1358562933F9D000B809DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FFDA98629072A5100231B82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA98529072A5100231B82 /* Health_app_project.app */,
+				3F546B2E29637A9A00406358 /* Watch_app Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FFDA98729072A5100231B82 /* Health_app_project */ = {
+			isa = PBXGroup;
+			children = (
+				4E1358552933F9A400B809DF /* Health_app_project.entitlements */,
+				138A5E792909A328009B8235 /* Models */,
+				138A5E782909A320009B8235 /* Views */,
+				138A5E772909A315009B8235 /* View Controllers */,
+				3FFDA98829072A5100231B82 /* AppDelegate.swift */,
+				3FFDA98A29072A5100231B82 /* SceneDelegate.swift */,
+				3FFDA99129072A5600231B82 /* Assets.xcassets */,
+				3FFDA99329072A5600231B82 /* LaunchScreen.storyboard */,
+				3FFDA99629072A5600231B82 /* Info.plist */,
+				4E1358472931756C00B809DF /* GoogleService-Info.plist */,
+			);
+			path = Health_app_project;
+			sourceTree = "<group>";
+		};
+		4E1358562933F9D000B809DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F546B41296383F100406358 /* HealthKit.framework */,
+				4E1358572933F9D200B809DF /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F546B2D29637A9A00406358 /* Watch_app Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F546B3B29637A9E00406358 /* Build configuration list for PBXNativeTarget "Watch_app Watch App" */;
+			buildPhases = (
+				3F546B2A29637A9A00406358 /* Sources */,
+				3F546B2B29637A9A00406358 /* Frameworks */,
+				3F546B2C29637A9A00406358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F546B3E296383CC00406358 /* PBXTargetDependency */,
+				3F546B40296383E300406358 /* PBXTargetDependency */,
+			);
+			name = "Watch_app Watch App";
+			productName = "Watch_app Watch App";
+			productReference = 3F546B2E29637A9A00406358 /* Watch_app Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FFDA98429072A5100231B82 /* Health_app_project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFDA99929072A5600231B82 /* Build configuration list for PBXNativeTarget "Health_app_project" */;
+			buildPhases = (
+				3FFDA98129072A5100231B82 /* Sources */,
+				3FFDA98229072A5100231B82 /* Frameworks */,
+				3FFDA98329072A5100231B82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Health_app_project;
+			packageProductDependencies = (
+				4E13584A2931769900B809DF /* FirebaseAuth */,
+				4E13584C2931769900B809DF /* FirebaseDatabase */,
+				4E13584E2931769900B809DF /* FirebaseDatabaseSwift */,
+			);
+			productName = Health_app_project;
+			productReference = 3FFDA98529072A5100231B82 /* Health_app_project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FFDA97D29072A5100231B82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3F546B2D29637A9A00406358 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3FFDA98429072A5100231B82 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3FFDA98029072A5100231B82 /* Build configuration list for PBXProject "Health_app_project" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FFDA97C29072A5100231B82;
+			packageReferences = (
+				4E1358492931769900B809DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3FFDA98629072A5100231B82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FFDA98429072A5100231B82 /* Health_app_project */,
+				3F546B2D29637A9A00406358 /* Watch_app Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F546B2C29637A9A00406358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F546B3829637A9E00406358 /* Preview Assets.xcassets in Resources */,
+				3F546B3529637A9E00406358 /* Assets.xcassets in Resources */,
+				3F546B3C296383CC00406358 /* Health_app_project.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFDA98329072A5100231B82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFDA99529072A5600231B82 /* LaunchScreen.storyboard in Resources */,
+				4E1358482931756D00B809DF /* GoogleService-Info.plist in Resources */,
+				3FFDA99229072A5600231B82 /* Assets.xcassets in Resources */,
+				3FFDA99029072A5100231B82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F546B2A29637A9A00406358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F546B3329637A9A00406358 /* ContentView.swift in Sources */,
+				3F546B3129637A9A00406358 /* Watch_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFDA98129072A5100231B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFDA9A129075EC800231B82 /* ShareViewController.swift in Sources */,
+				3F44E1A6290A6A5500D85505 /* About.swift in Sources */,
+				3FFDA9B32908B28900231B82 /* PrivacyViewController.swift in Sources */,
+				3FFDA9BB2908B86A00231B82 /* TodayViewController.swift in Sources */,
+				3FB78A79290D01E900F4D058 /* TabBarViewController.swift in Sources */,
+				3FFDA9AB2908B0D600231B82 /* TodayHeartrateViewController.swift in Sources */,
+				3FFDA98929072A5100231B82 /* AppDelegate.swift in Sources */,
+				3FFDA99F29075EA200231B82 /* HistoryViewController.swift in Sources */,
+				138A5E872909A821009B8235 /* HeartRate.swift in Sources */,
+				3FFDA9A329080DFB00231B82 /* TodayStepsViewController.swift in Sources */,
+				138A5E7F2909A435009B8235 /* HealthData.swift in Sources */,
+				3FFDA9A72908B06200231B82 /* TodayCaloriesViewController.swift in Sources */,
+				3FFDA9B72908B2E900231B82 /* AboutViewController.swift in Sources */,
+				3FFDA9A5290876E700231B82 /* HistoryStepsViewController.swift in Sources */,
+				3FFDA9A92908B09E00231B82 /* TodaySleepViewController.swift in Sources */,
+				3FFDA9AD2908B10C00231B82 /* HistorySleepViewController.swift in Sources */,
+				4E1358512931DBA400B809DF /* Vitals.swift in Sources */,
+				3F44E1A2290A6A1200D85505 /* PersonalDetails.swift in Sources */,
+				3FFDA9B12908B23800231B82 /* DetailsViewController.swift in Sources */,
+				3FB78A7B290D1EFA00F4D058 /* AppInfoViewController.swift in Sources */,
+				138A5E862909A821009B8235 /* Steps.swift in Sources */,
+				138A5E852909A821009B8235 /* Calories.swift in Sources */,
+				3FFDA9AF2908B18F00231B82 /* ProfileTableTableViewController.swift in Sources */,
+				3F44E1A4290A6A4000D85505 /* Notifications.swift in Sources */,
+				3F44E1A8290A6AA400D85505 /* Privacy.swift in Sources */,
+				3FFDA98B29072A5100231B82 /* SceneDelegate.swift in Sources */,
+				3FFDA9B52908B2B800231B82 /* NotificationsViewController.swift in Sources */,
+				3F657D36290CB4C60047C88C /* LoginViewController.swift in Sources */,
+				138A5E842909A821009B8235 /* Sleep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F546B3E296383CC00406358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FFDA98429072A5100231B82 /* Health_app_project */;
+			targetProxy = 3F546B3D296383CC00406358 /* PBXContainerItemProxy */;
+		};
+		3F546B40296383E300406358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FFDA98429072A5100231B82 /* Health_app_project */;
+			targetProxy = 3F546B3F296383E300406358 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FFDA98E29072A5100231B82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFDA98F29072A5100231B82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FFDA99329072A5600231B82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FFDA99429072A5600231B82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F546B3929637A9E00406358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_app Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7274ZL95U6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_app;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		3F546B3A29637A9E00406358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_app Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7274ZL95U6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_app;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		3FFDA99729072A5600231B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FFDA99829072A5600231B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FFDA99A29072A5600231B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Health_app_project/Health_app_project.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7274ZL95U6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Health_app_project/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Want to access health app to read heart rate";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Want to access health app to read heart rate";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "weather.Health-app-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FFDA99B29072A5600231B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Health_app_project/Health_app_project.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7274ZL95U6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Health_app_project/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Want to access health app to read heart rate";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Want to access health app to read heart rate";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "weather.Health-app-project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F546B3B29637A9E00406358 /* Build configuration list for PBXNativeTarget "Watch_app Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F546B3929637A9E00406358 /* Debug */,
+				3F546B3A29637A9E00406358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFDA98029072A5100231B82 /* Build configuration list for PBXProject "Health_app_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFDA99729072A5600231B82 /* Debug */,
+				3FFDA99829072A5600231B82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFDA99929072A5600231B82 /* Build configuration list for PBXNativeTarget "Health_app_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFDA99A29072A5600231B82 /* Debug */,
+				3FFDA99B29072A5600231B82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E1358492931769900B809DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E13584A2931769900B809DF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1358492931769900B809DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4E13584C2931769900B809DF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1358492931769900B809DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4E13584E2931769900B809DF /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1358492931769900B809DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FFDA97D29072A5100231B82 /* Project object */;
+}
